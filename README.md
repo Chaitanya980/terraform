@@ -1,1 +1,50 @@
-Description: This project is a hands-on learning experience designed on how to create a complete Continuous Integration and Continuous Deployment (CI/CD) pipeline. It leverages Terraform to provision and manage AWS infrastructure, including an EC2 instance (t2.micro) to host the application, an S3 bucket for secure Terraform state storage, and an ECR repository for storing Docker images. The pipeline uses GitHub Actions to automate the deployment process, triggered by every commit to the main branch. A sample Node.js Express application (nodeapp) is Dockerized and deployed to the EC2 instance, running on port 8080. The setup includes two workflows: one to deploy the AWS infrastructure using Terraform and another to build, push, and deploy the Dockerized app to EC2, pulling the image from the private ECR repository. This project is ideal for learning infrastructure-as-code, containerization, and automated deployments in a cloud environment.
+# 📌 Terraform CI/CD Infrastructure
+
+This repository contains a hands-on Terraform project that demonstrates a complete Infrastructure as Code (IaC) setup with CI/CD automation.
+
+The deployment provisions AWS resources using Terraform and automates builds and deployments with GitHub Actions.
+
+---
+
+## Overview
+
+The goal of this project is to learn and practice:
+
+- **Infrastructure provisioning with Terraform**
+- **Automated deployment using GitHub Actions**
+- **Using AWS services like EC2, S3, and ECR**
+
+The infrastructure includes:
+- An **EC2 instance** hosting a Dockerized Node.js app
+- An **S3 bucket** for Terraform state storage
+- An **ECR repository** for container images
+
+---
+
+## Tech Stack Used
+
+This project uses:
+
+- **Terraform** — Infrastructure as Code (IaC) tool for provisioning cloud resources  
+- **AWS** — EC2, S3, ECR as infrastructure targets  
+- **GitHub Actions** — CI/CD workflows for automated provisioning and deployment  
+- **Docker** — Containerization for the Node.js application
+
+---
+
+## What I’m Working On
+
+I’m actively improving this project by:
+1. Adding support for **multiple environments** (dev/stage/prod)  
+2. Integrating **remote Terraform state with locking** (e.g., DynamoDB + S3)  
+3. Enhancing **CI/CD workflows** with security checks and plan approvals
+
+---
+
+## Learning & Building
+
+This project is part of my continuous journey to learn:
+- Advanced Infrastructure as Code practices  
+- Cloud automation and Reliability Engineering  
+- Scalable, production-ready deployment pipelines
+
