@@ -10,5 +10,5 @@ variable "instance_type" {
 
 variable "key_name" {
   description = "EC2 key pair name"
-  default     = "tf-key"  # Replace with your AWS key pair name
+  default     = "tf-key"  
 }
