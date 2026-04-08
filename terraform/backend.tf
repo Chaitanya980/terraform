@@ -1,6 +1,6 @@
 terraform {
   backend "s3" {
-    bucket = "your-terraform-state-bucket"  # Create this bucket manually first or automate it separately
+    bucket = "my-state-bucket" 
     key    = "terraform.tfstate"
     region = "us-east-1"
   }
